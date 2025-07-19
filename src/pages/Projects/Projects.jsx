@@ -7,7 +7,7 @@ export const Projects = () => {
     <div className="projects" id="projects">
       <h1 className="projects__title">Proyectos</h1>
       <div className="projects__list">
-        {PROJECTS.map((project, i) => (
+        {PROJECTS.map((project) => (
           <ProjectCard
             key={crypto.randomUUID()}
             image={project.image}
@@ -16,6 +16,7 @@ export const Projects = () => {
             technologies={project.technologies}
             frontendCodeLink={project.frontendCodeLink}
             backendCodeLink={project.backendCodeLink}
+            iaCodeLink={project.iaCodeLink}
             projectLink={project.projectLink}
           />
         ))}

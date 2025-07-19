@@ -8,6 +8,7 @@ export const ProjectCard = ({
   technologies,
   frontendCodeLink,
   backendCodeLink,
+  iaCodeLink,
   projectLink,
 }) => {
   return (
@@ -48,6 +49,11 @@ export const ProjectCard = ({
               className="project__button"
             >
               Ver código del backend
+            </a>
+          )}
+          {iaCodeLink && (
+            <a href={iaCodeLink} target="_blank" className="project__button">
+              Ver código de la IA
             </a>
           )}
           {projectLink && (

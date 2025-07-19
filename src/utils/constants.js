@@ -1,3 +1,4 @@
+import houseWorth from "../assets/image/projects/houseworth.jpeg";
 import pokeAPI from "../assets/image/projects/poke-api.png";
 import miskito from "../assets/image/projects/miskito.png";
 import policiaVsLadron from "../assets/image/projects/policia-vs-ladron.png";
@@ -7,17 +8,73 @@ import convertidorYoutubeMp3 from "../assets/image/projects/convertidor-youtube-
 import html from "../assets/icon/html.svg";
 import css from "../assets/icon/css.svg";
 import javascript from "../assets/icon/javascript.svg";
+import typescript from "../assets/icon/typescript.svg";
 import react from "../assets/icon/react.svg";
+import tailwindcss from "../assets/icon/tailwind.svg";
+import firebase from "../assets/icon/firebase.svg";
 import nodejs from "../assets/icon/nodejs.svg";
 import express from "../assets/icon/express.svg";
 import mysql from "../assets/icon/mysql.svg";
 import python from "../assets/icon/python.svg";
 import fastapi from "../assets/icon/fastapi.svg";
+import gemini from "../assets/icon/gemini.svg";
 
 export const URL_SERVER =
   "https://portafolio-web-backend-solitary-dawn-9347.fly.dev";
 
 export const PROJECTS = [
+  {
+    name: "HouseWorth",
+    image: houseWorth,
+    description:
+      "Aplicación web que predice precios de viviendas en Ames, E.E.U.U., usando inteligencia artificial. Permite predicciones mediante formularios o archivos Excel y muestra un historial de resultados.",
+    technologies: [
+      {
+        image: html,
+        name: "HTML",
+      },
+      {
+        image: tailwindcss,
+        name: "Tailwind CSS",
+      },
+      {
+        image: typescript,
+        name: "TypeScript",
+      },
+      {
+        image: react,
+        name: "React",
+      },
+      {
+        image: firebase,
+        name: "Firebase",
+      },
+      {
+        image: nodejs,
+        name: "Node.js",
+      },
+      {
+        image: express,
+        name: "Express.js",
+      },
+      {
+        image: mysql,
+        name: "MySQL",
+      },
+      {
+        image: python,
+        name: "Python",
+      },
+      {
+        image: fastapi,
+        name: "FastAPI",
+      },
+    ],
+    frontendCodeLink: "https://github.com/JhuniorCq/houseworth-frontend.git",
+    backendCodeLink: "https://github.com/JhuniorCq/houseworth-backend.git",
+    iaCodeLink: "https://github.com/JhuniorCq/houseworth-ia.git",
+    projectLink: null,
+  },
   {
     name: "PokeAPI",
     image: pokeAPI,
@@ -65,6 +122,10 @@ export const PROJECTS = [
       {
         image: react,
         name: "React",
+      },
+      {
+        image: gemini,
+        name: "Gémini AI",
       },
     ],
     frontendCodeLink: "https://github.com/JhuniorCq/platos-tipicos-peru.git",
